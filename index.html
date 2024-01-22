@@ -1,0 +1,82 @@
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header class="container">
+    <div class="navbar">
+        <div class="logo"><a href="">Port<span class="color">folio</span></a></div>
+        <div class="sidebar" id="sidebar">&#9776;</div>
+        <div class="nav" id="nav">
+            <ul>
+             <li><a href="">Projects</a></li>
+              <li><a href="">Contact</a></li>
+             <li><a href="">Resume/CV</a></li>
+              <li><a href="">About Me</a></li>
+            <li><a href="">References</a></li>
+             <li><a href="">Skills</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- introduction -->
+
+<div class="container" id="intro">
+    <div class="intro">
+      <div class="text">
+      <h6>Hello, my name is</h6>    
+       <h4>Johnbosco</h4>   
+          <h2>Web developer &</h2>
+          <h2><b>Designer</b></h2>
+       <div class="hire"><a href="" target="_blank">Hire Me</a>
+      </div>  
+        </div>
+       <div class="img">
+           <img src="img/bg2.jpg" id="img" alt="">
+           
+       </div>
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+$(document).ready(function() {
+  
+    
+    $('#sidebar').click(function(event) {
+        
+        $(event.target).parent().find('#nav').slideToggle('show');
+    });
+});
+
+    
+</script>
+
+</body>
+</html>
